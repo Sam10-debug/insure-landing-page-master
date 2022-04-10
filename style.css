@@ -1,7 +1,8 @@
 *{
  margin: 0;
  padding: 0;
- box-sizing: border-box;   
+ box-sizing: border-box; 
+ font-family: 'Karla', sans-serif;  
 }
 body{
     min-height: 100vh;
@@ -10,6 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 1rem 0rem;
+
+   
 }
 #desktop{
     display: none;
@@ -23,13 +26,16 @@ img{
 }
 .hamburger{
     position: absolute;
-    right: 10%;
+    right: 5%;
     width: 27px;
 }
 .logo{
     height: 13px;
 }
 .firstWrap{
+    background-image: url(images/bg-pattern-intro-left-mobile.svg),url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 450px,right 560px ;
     margin-top: 2rem;
     width: 100%;
     text-align: center;
@@ -45,6 +51,8 @@ img{
 .firstWrap>h1{
     color: white;
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .text{
     color:  hsl(216, 30%, 68%);
@@ -68,25 +76,36 @@ img{
 .secondWrap{
     text-align: center;
 }
+h2{
+    margin-bottom: 1rem;
+}
 .thirdWrap{
     background-color: hsl(256, 26%, 20%);
     color: white;
     text-align: center;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 6rem 1rem;
     margin: 1rem 0rem;
+    margin-top: 6rem;
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 180px top 1px;
 }
-.thirdWrap>h2{
-    margin: 1rem;
+.thirdWrap>h1{
+    margin: 2rem;
 }
 .workWrap{
     border: 1px solid #ffffff;
-    padding: 0.2rem 0rem;
+    padding: 0.5rem 0rem;
     margin: 0.7rem 5rem 0rem;
+    cursor: pointer;
 }
 .fourthWrap{
     margin-top: 4rem;
     text-align: center;
     background-color:  hsl(0, 0%, 98%);
+    background-image: url(images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left -40px;
 }
 .fourthWrap>img{
     margin: 3rem 0rem 1rem 0rem;
@@ -98,11 +117,36 @@ img{
     gap: 0.7rem;
     margin-bottom: 3rem;
 }
+.fb{
+    margin-right: 1rem;
+}
+.twitter{
+    margin-right: 1rem;
+}
+.pinterest{
+    margin-right: 1rem;
+}
+h1{
+    font-family: 'DM Serif Display', serif;
+}
+h2{
+    font-family: 'DM Serif Display', serif;
+}
+h3{
+    font-family: 'DM Serif Display', serif;
+}
+.ig{
+    margin-right: 1rem;
+}
 .aboutWrap{
     text-transform: uppercase;
     line-height: 1.5;
     color: hsl(256, 26%, 20%);
     font-weight: 700;
+    cursor: pointer;
+}
+.aboutWrap>p:hover{
+    text-decoration: underline;
 }
 #companyWrap>p:first-of-type{
     margin-bottom: 1rem;
@@ -122,4 +166,55 @@ img{
 }
 .attribution{
     margin-top: 1rem;
+}
+hr{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+.hamburger.active{
+    display: none;
+}
+.popUp{
+  
+    display: none;
+}
+.popUp.active{
+    display: flex;
+    background-color: hsl(270, 9%, 17%);
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    height: 400px;
+    gap: 2rem;
+    width: 100%;
+    background-image: url(images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: left 200px;
+    position: absolute;
+}
+.cancel{
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+.cancel.active{
+    display: flex;
+}
+.popUp>div{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    width: 90%;
+    text-align: center;
+  
+}
+.popUp>div:first-of-type{
+    margin-top: 3rem;
+}
+.popUp>div:hover{
+    border: 1px solid white;
+    padding: 0.5rem;
+    font-weight: 700;
 }
