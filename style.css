@@ -218,3 +218,6 @@ hr{
     padding: 0.5rem;
     font-weight: 700;
 }
+.tooltip svg:hover path{
+    fill: cyan;
+}
