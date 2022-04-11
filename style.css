@@ -236,7 +236,7 @@ hr{
         display: flex;
         position: absolute;
         width: 350px;
-        left: 27rem;
+        right: 5%;
         top: 10rem;
     }
     .firstWrap{
@@ -301,7 +301,7 @@ hr{
         margin-bottom: 10rem;
         background-image: url(images/bg-pattern-how-we-work-desktop.svg);
         background-repeat: no-repeat;
-        background-position: left 450px top 1px;
+        background-position: right 3% top 1px;
         display: flex;
         flex: 1;
         justify-content: center;
@@ -353,6 +353,7 @@ hr{
    }
    .fourthWrap{
        position: relative;
+       background-image: url(images/bg-pattern-footer-desktop.svg);
    }
    .secondLogo{
        position: absolute;
