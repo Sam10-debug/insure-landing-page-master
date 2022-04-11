@@ -19,6 +19,9 @@ a{
 #desktop{
     display: none;
 }
+.desktopPopUp{
+    display: none;
+}
 img{
     object-fit: contain;
 }
@@ -372,5 +375,29 @@ hr{
    }
    hr{
        margin: 0rem 2rem 0rem 8rem;
+   }
+   .desktopPopUp{
+       display: flex;
+       position: absolute;
+       right: 5%;
+   }
+   .desktopPopUp>div{
+       margin: -1.8rem 1rem 0rem;
+       text-transform: uppercase;
+       cursor: pointer;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .firstPop{
+       width: 120px;
+       text-align: center;
+   }
+   .desktopPopUp>div:hover{
+        border: 1px solid ;
+        background-color: black;
+        color: white;
    }
 }
