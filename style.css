@@ -69,6 +69,10 @@ img{
     border: 1px solid white;
     color: white;
     padding: 0.3rem 0rem;
+    cursor: pointer;
+}
+.textwrap:hover{
+    background-color: white;
 }
 .icons{
     width: 40px;
