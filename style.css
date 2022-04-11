@@ -73,6 +73,7 @@ img{
 }
 .textwrap:hover{
     background-color: white;
+    color: black;
 }
 .icons{
     width: 40px;
