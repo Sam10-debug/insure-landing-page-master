@@ -11,8 +11,10 @@ body{
     justify-content: center;
     align-items: center;
     padding: 1rem 0rem;
-
-   
+}
+a{
+    text-decoration: none;
+    color: blue;
 }
 #desktop{
     display: none;
@@ -46,7 +48,10 @@ img{
 .firstWrap>img{
     width: 100%;
     margin-bottom: 2.5rem;
-
+}
+.workWrap:hover{
+    background-color: white;
+    color: black;
 }
 .firstWrap>h1{
     color: white;
@@ -98,6 +103,7 @@ h2{
     padding: 0.5rem 0rem;
     margin: 0.7rem 5rem 0rem;
     cursor: pointer;
+    color: white;
 }
 .fourthWrap{
     margin-top: 4rem;
@@ -221,4 +227,144 @@ hr{
 }
 .tooltip svg:hover path{
     fill: cyan;
+}
+@media screen and (min-width:900px){
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display: flex;
+        position: absolute;
+        width: 350px;
+        left: 27rem;
+        top: 10rem;
+    }
+    .firstWrap{
+        background-image: url(images/bg-pattern-intro-left-desktop.svg),url(images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left 10px top 200px,right -90px top -80px ;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .firstWrap>img{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    
+    }
+    .firstWrap>h1{
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        margin-right: 25rem;
+        text-align: left;
+        margin-top: 5rem;
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .textwrap{
+        margin: 2rem 4rem 0rem;
+        padding: 0.5rem 0.3rem;
+
+    }
+    #firstText{
+        margin-right: 30rem;
+        margin-left: 3rem;
+        text-align: left;
+    }
+    .hamburger{
+        display: none;
+    }
+    .logo{
+        margin-left: 5rem;
+    }
+    .secondWrap>h1{
+        margin: 10.5rem 2rem 1rem;
+        text-align: left;
+        font-size: 3rem;
+    }
+    .secondWrap{
+        text-align: center;
+    }
+    .flexWrap{
+        display: flex;
+        text-align: left;
+    }
+    .thirdWrap{
+        text-align: center;
+        padding: 4rem 1rem 6rem 1rem;
+        margin: 1rem 0rem;
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left 450px top 1px;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .thirdWrap>h1{
+        margin: 2rem;
+        font-size: 3rem;
+        text-align: left;
+    }
+    .workWrap{
+        border: 1px solid #ffffff;
+        padding: 1rem 0rem;
+        margin: 0.7rem 2rem 0rem;
+        cursor: pointer;
+        height: 50px;
+        width: 200px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   footer{
+       display: flex;
+       margin-left: 5rem;
+   }
+   #helpWrap{
+       margin-top: -1rem;
+       margin-left: 3rem;
+       line-height: 2.3;
+   }
+   #contactWrap{
+    margin-top: -1rem;
+    margin-left: 3rem; 
+    line-height: 2.3;
+   }
+   #othersWrap{
+    margin-top: -1rem;
+    margin-left: 3rem; 
+    line-height: 2.3;
+   }
+   #companyWrap{
+    margin-left: 3rem; 
+    line-height: 2.3;
+   }
+   .attribution{
+       margin-top: 3rem;
+   }
+   .fourthWrap{
+       position: relative;
+   }
+   .secondLogo{
+       position: absolute;
+       left: 15%;
+       top: -7rem;
+   }
+   .tooltip{
+       position: absolute;
+       right: 5%;
+       top: -4rem;
+   }
+   hr{
+       margin: 0rem 2rem 0rem 8rem;
+   }
 }
